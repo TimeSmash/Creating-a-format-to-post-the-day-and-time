@@ -4,6 +4,7 @@ This is an exercise provided by w3resource.com. I tried to use only the knowledg
 What the project does/Proposed problem: Posts the day and time in a specificied format
 
 Proposed problem: "The day is: DAY.
+
 /n Current time is: XX AM/PM : XX : XX"
 
 Why the project is useful: Helpful exercise, with what I hope is a thorough explanation
