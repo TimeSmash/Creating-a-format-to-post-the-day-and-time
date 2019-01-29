@@ -1,0 +1,38 @@
+function dayAndTime (x) {
+var timeString = x.toTimeString(); //"XX:XX:XX GMT-XXXX (CST)"
+var minSec = " " + timeString.slice(2,3) + " " + timeString.slice(3,5) + " " + timeString.slice(5,6) + " " + timeString.slice(6,9)//": minMin : secSec"
+var hour = timeString.substring(0,2)//"hourHour"
+var day = x.getDay();
+if (hour > 12) {
+hour = `${hour-12} PM`
+} else if (hour == 12) {
+hour = `${hour} PM`
+} else {
+hour = `${hour} AM`
+}
+switch (day) {
+    case 0: 
+		day = "Sunday";
+		break;
+    case 1:
+		day = "Monday";
+		break;
+    case 2: 
+		day = "Tuesday";
+		break;
+    case 3:
+		day = "Wedsnesday";
+		break;
+    case 4:
+		day = "Thursday";
+		break;
+    case 5:
+		day = "Friday";
+		break;
+    case 6:
+		day = "Saturday";
+		break;
+}
+return `Today is: ${day}.
+Current time is: ${hour}${minSec}`
+}
