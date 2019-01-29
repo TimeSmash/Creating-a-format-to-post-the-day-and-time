@@ -16,7 +16,7 @@ Solution explained:
 
 Create dayAndTime
 
-There’s a lot going on here. So we’re going to break it down nice and easy. Note that the following focuses more on the rightNow variable rather than the noonNow variable (which is a user-defined Date, versus one created at the moment in time like rightNow), but most of the same logic can be used.
+There’s a lot going on here. So we’re going to break it down nice and easy. Note that the following focuses more on the `rightNow` variable rather than the noonNow variable (which is a user-defined Date, versus one created at the moment in time like rightNow), but most of the same logic can be used.
 
 The variable rightNow is defined as a new Date constructor, which prints the current date and time. If we called rightNow, we would get the time I made this example, which was Mon Jan 28 2019 17:05:59 GMT-0600 (Central Standard Time). Note that this is not a string. So, we make a var timeString to convert it into a string, which returns "16:30:39 GMT-0600 (Central Standard Time)", which is a string. From there, we make var minSec by concatenating a bunch of space strings with uses of string.slice() to cut out colons and numbers from the timeString, since we want spaces between colons and numbers returned. We get var hour by using .substring() to make a small string made up of the first two characters from timeString. Finally, we make var day by taking the original rightNow variable (remember, not a string), and subject it to the Date.getDay() method, which will return a 1, since Monday = 1 via .getDay()’s rules. 
 
