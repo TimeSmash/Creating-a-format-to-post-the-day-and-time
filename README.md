@@ -22,6 +22,6 @@ The variable `rightNow` is defined as a new <b>Date()</b> constructor, which pri
 
 Since we don’t want military time, if `hour` is >12, we subtract 12 from it and then add “ PM”. If `hour` is <em>exactly</em> 12, we just add “ PM” to it. If it’s <12, we add “ AM” to it. 
 
-After this, we make use of a <b>switch statement<b>, whose cases depending on what `day` is going to equal. Since `day` = 1, we make `day` become “Monday”.
+After this, we make use of a <b>switch statement</b>, whose cases depending on what `day` is going to equal. Since `day` = 1, we make `day` become “Monday”.
 
 Finally, we return a template literal that utilizes the value of `day`, `hour`, and `minSec`.
